@@ -5,6 +5,7 @@ import Input from '../../Components/Input';
 import TabAuth from '../../Components/TabAuth';
 import LayoutAuth from '../../Layout/Auth';
 import { Feather, AntDesign } from 'react-web-vector-icons';
+import { Link } from 'react-router-dom';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -57,8 +58,8 @@ function Login() {
             <div className="my-5">
               <p className="text-base text-black">
                 Don't have an account?{' '}
-                <a className="font-bold " href="#">
-                  Sign up
+                <a className="font-bold ">
+                  <Link to="/register">Sign up</Link>
                 </a>{' '}
                 {'>>'}
               </p>

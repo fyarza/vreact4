@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LayoutAuth from '../Layout/Auth';
 import PersonalInformation from './Tabs/PersonalInformation';
+import Rides from './Tabs/Rides';
 
 function Profile() {
   const [tabs, setTabs] = useState(1);
@@ -212,20 +213,12 @@ function Profile() {
           <div
             className={`${
               tabs !== 6 ? 'hidden' : ''
-            } p-4 bg-gray-50 rounded-lg dark:bg-gray-800`}
+            } p-4 rounded-lg dark:bg-gray-800`}
             id="contacts"
             role="tabpanel"
             aria-labelledby="contacts-tab"
           >
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              This is some placeholder content the{' '}
-              <strong className="font-medium text-gray-800 dark:text-white">
-                Contacts tab's associated content
-              </strong>
-              . Clicking another tab will toggle the visibility of this one for
-              the next. The tab JavaScript swaps classes to control the content
-              visibility and styling.
-            </p>
+            <Rides />
           </div>
           <div
             className={`${

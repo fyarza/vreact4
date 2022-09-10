@@ -7,6 +7,7 @@ import FUECList from './Pages/FUEC';
 import FUECForm from './Pages/FUEC/Form';
 import History from './Pages/History';
 import Home from './Pages/Home';
+import HomeOnline from './Pages/HomeOnline';
 import Profile from './Pages/Profile';
 import ProfileEdit from './Pages/Profile-Edit';
 import ProfileMobile from './Pages/ProfileMobile';
@@ -28,6 +29,7 @@ function App() {
       <Route path="profilemobile" element={<ProfileMobile />} />
       <Route path="profileedit" element={<ProfileEdit />} />
       <Route path="history" element={<History />} />
+      <Route path="homeonline" element={<HomeOnline />} />
     </Routes>
   );
 }

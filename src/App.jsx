@@ -5,6 +5,7 @@ import Login from './Pages/Auth/Login';
 import Register from './Pages/Auth/Register';
 import FUECList from './Pages/FUEC';
 import FUECForm from './Pages/FUEC/Form';
+import History from './Pages/History';
 import Home from './Pages/Home';
 import Profile from './Pages/Profile';
 import ProfileEdit from './Pages/Profile-Edit';
@@ -26,6 +27,7 @@ function App() {
       <Route path="settings" element={<Settings />} />
       <Route path="profilemobile" element={<ProfileMobile />} />
       <Route path="profileedit" element={<ProfileEdit />} />
+      <Route path="history" element={<History />} />
     </Routes>
   );
 }

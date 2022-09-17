@@ -3,11 +3,15 @@ import { Routes, Route } from 'react-router-dom';
 import About from './Pages/About';
 import Login from './Pages/Auth/Login';
 import Register from './Pages/Auth/Register';
+import BookingDetails from './Pages/BookingDetailsMobile';
 import FUECList from './Pages/FUEC';
 import FUECForm from './Pages/FUEC/Form';
 import History from './Pages/History';
+import HistoryDetailsMobile from './Pages/HistoryDetailsMobile';
 import Home from './Pages/Home';
 import HomeOnline from './Pages/HomeOnline';
+import NotificationsMobile from './Pages/NotificationsMobile';
+import PaymentMethodMobile from './Pages/PaymentMethodMobile';
 import Profile from './Pages/Profile';
 import ProfileEdit from './Pages/Profile-Edit';
 import ProfileMobile from './Pages/ProfileMobile';
@@ -29,7 +33,11 @@ function App() {
       <Route path="profilemobile" element={<ProfileMobile />} />
       <Route path="profileedit" element={<ProfileEdit />} />
       <Route path="history" element={<History />} />
+      <Route path="history-details" element={<HistoryDetailsMobile />} />
       <Route path="homeonline" element={<HomeOnline />} />
+      <Route path="booking-details" element={<BookingDetails />} />
+      <Route path="paymentmethod" element={<PaymentMethodMobile />} />
+      <Route path="notifications" element={<NotificationsMobile />} />
     </Routes>
   );
 }
